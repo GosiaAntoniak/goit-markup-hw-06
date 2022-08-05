@@ -88,6 +88,11 @@ body {
     text-decoration: none;
 }
 
+.nav-logo {
+    color: var(--light-blue);
+    transition: color 250ms var(--cubic-bezier);
+}
+
 .nav-menu {
     text-decoration: none;
     font-size: 14px;
@@ -619,7 +624,7 @@ textarea::placeholder {
     height: 44px;
     padding: 12px;
     cursor: pointer;
-    transition: color, background-color 250ms var(--cubic-bezier);
+    transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier);
 }
 
 .socialmedia-wrapper > li:hover,
@@ -687,15 +692,16 @@ textarea::placeholder {
     border-radius: var(--button-radius);
     padding: 6px 22px;
     cursor: pointer;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: color, background-color 250ms var(--cubic-bezier);
+
+    transition: color 250ms var(--cubic-bezier), background-color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
 }
 
 .portfolio-button-nav:hover,
 .portfolio-button-nav:focus {
     color: var(--portfolio-button);
     background-color: var(--light-blue);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .about-projects-title {
@@ -845,6 +851,7 @@ textarea::placeholder {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: color 250ms var(--cubic-bezier), border-color 250ms var(--cubic-bezier);
 }
 
 .footer {
@@ -863,6 +870,12 @@ textarea::placeholder {
     flex-flow: row nowrap;
     color: var(--white-transparent);
     gap: 70px;
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--light-blue);
+    transition: color 250ms var(--cubic-bezier);
 }
 
 .footer-color-container {
@@ -930,7 +943,7 @@ textarea::placeholder {
     background-color: var(--white-transparent-background);
     color: var(--white-main-banner);
     justify-content: space-between;
-    transition: color, background-color 250ms var(--cubic-bezier);
+    transition: background-color 250ms var(--cubic-bezier);
 }
 
 .footer-socialmedia-wrapper li:hover,
