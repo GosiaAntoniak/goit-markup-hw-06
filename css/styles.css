@@ -293,9 +293,8 @@ body {
     letter-spacing: 0.01em;
     text-align: left;
     color: var(--grey);
-    padding-left: 40px;
-    padding-bottom: 4px;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 4px;
 }
 
 .modal-form-text > svg {
@@ -318,7 +317,7 @@ body {
     position: absolute;
     z-index: 2;
     left: 11px;
-    top: 11px;
+    top: 39px;
     height: 18px;
     width: 18px;
 }
@@ -328,7 +327,6 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 120px;
-    margin-left: 40px;
     resize: none;
     padding-top: 12px;
     padding-left: 16px;
@@ -348,6 +346,8 @@ textarea::placeholder {
     display: block;
     position: relative;
     cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .modal-checkbox input {
@@ -832,7 +832,6 @@ textarea::placeholder {
 
 .our-customers li {
     color: var(--social-icon);
-    transition: color 250ms var(--cubic-bezier);
 }
 
 .our-customers li:hover,
@@ -870,12 +869,14 @@ textarea::placeholder {
     flex-flow: row nowrap;
     color: var(--white-transparent);
     gap: 70px;
+    transition: color 250ms var(--cubic-bezier);
+    align-content: center;
+    align-items: center;
 }
 
 .footer-contact:hover,
 .footer-contact:focus {
     color: var(--light-blue);
-    transition: color 250ms var(--cubic-bezier);
 }
 
 .footer-color-container {
@@ -996,7 +997,6 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     margin-left: 12px;
-    margin-bottom: 94px;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
     transition-property: transform;
