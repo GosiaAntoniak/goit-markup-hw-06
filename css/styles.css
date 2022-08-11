@@ -36,16 +36,6 @@ body {
     padding: 94px 0;
 }
 
-.active::after {
-    display: block;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: var(--light-blue);
-    border-radius: 2px;
-    bottom: 0;
-}
 
 .header-elements {
     background-color: var(--white-main-banner);
@@ -98,7 +88,7 @@ body {
     font-size: 14px;
 }
 
-.nav-menu:hover:after {
+.nav-menu:after {
     display: block;
     content: "";
     position: absolute;
@@ -108,6 +98,13 @@ body {
     border-radius: 2px;
     bottom: 0;
     text-align: center;
+    transition: opacity 250ms var(--cubic-bezier);
+    opacity: 0;
+}
+
+.nav-menu:hover:after,
+.active::after {
+    opacity: 1;
 }
 
 .nav-menu,
@@ -604,7 +601,7 @@ textarea::placeholder {
 }
 
 .about-us-socialmedia {
-    padding-bottom: 30px;
+    margin-top: 16px;
 }
 
 .socialmedia-wrapper {
